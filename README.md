@@ -50,6 +50,20 @@ pnpm pack          # 产出 dsh-cosplay-studio-2.0.2.tgz
 
 把 `.tgz` 或整个目录发给别人；对方按方式 A 解压/放入 `node_modules` 并在 `package.json` 登记即可。发布到 npm 后可走插件市场安装。
 
+### 方式 C：从 GitHub 安装（插件市场收录后）
+
+仓库地址：<https://github.com/Wang-Shuanglin/dsh-cosplay-studio>
+
+不打包、不构建也能装：GitHub Release 上有一份预构建的 `dsh-cosplay-studio.tgz`（不含截图，约 60 KB），下载后按方式 A 解压进 `node_modules` 即可。
+
+```bash
+# 下载最新预构建包
+curl -L -o dsh-cosplay-studio.tgz \
+  https://github.com/Wang-Shuanglin/dsh-cosplay-studio/releases/latest/download/dsh-cosplay-studio.tgz
+```
+
+解压后目录结构是 `package/`，把它重命名成 `dsh-cosplay-studio` 放进 profile 的 `node_modules`，再按方式 A 第 2、3 步登记并重启。
+
 ---
 
 ## 二、第一次使用：教程 → 同意 → 自动部署 → 自动调试
