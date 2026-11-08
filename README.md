@@ -30,7 +30,7 @@ D:\DSH\profiles\desktop\node_modules\dsh-cosplay-studio
 ```json
 {
   "dependencies": {
-    "dsh-cosplay-studio": "2.0.2"
+    "dsh-cosplay-studio": "2.0.4"
   },
   "dsh": {
     "profile": {
@@ -45,7 +45,7 @@ D:\DSH\profiles\desktop\node_modules\dsh-cosplay-studio
 ### 方式 B：打包分发
 
 ```bash
-pnpm pack          # 产出 dsh-cosplay-studio-2.0.2.tgz
+pnpm pack          # 产出 dsh-cosplay-studio-2.0.4.tgz
 ```
 
 把 `.tgz` 或整个目录发给别人；对方按方式 A 解压/放入 `node_modules` 并在 `package.json` 登记即可。发布到 npm 后可走插件市场安装。
