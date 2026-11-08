@@ -1,7 +1,7 @@
 {
   "name": "dsh-cosplay-studio",
-  "version": "2.0.4",
-  "description": "Cosplay Studio for the DSH web GUI: one-click ComfyUI (Z-Image-Turbo) deployment with a self-test, then a character name, an uploaded reference photo, or a hot-character recommendation drives a live-action cosplay photo set following the cosplay-photo-set skill v2.1 (nine-paragraph character card with SKIN, base-image gate, shot-script gate, 1440x2560 finals, QC, de-oil, body makeup, JPEG export).",
+  "version": "2.1.0",
+  "description": "Cosplay Studio for the DSH web GUI: one-click ComfyUI (Z-Image-Turbo) deployment with a self-test, then a character name, an uploaded reference photo, or a hot-character pick drives a staged character research (web search, image classification, vision feature extraction), a base-image gate with manual/smart retouch, a character-specific shot script, and 1440x2560 live-action cosplay finals with optional de-oil/makeup/export.",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
@@ -11,6 +11,7 @@
   },
   "files": [
     "lib",
+    "!lib/tools/__pycache__",
     "cordis.patch.yml",
     "README.md"
   ],
