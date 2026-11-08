@@ -1,0 +1,56 @@
+{
+  "name": "dsh-cosplay-studio",
+  "version": "2.0.2",
+  "description": "Cosplay Studio for the DSH web GUI: one-click ComfyUI (Z-Image-Turbo) deployment with a self-test, then a character name, an uploaded reference photo, or a hot-character recommendation drives a live-action cosplay photo set following the cosplay-photo-set skill v2.1 (nine-paragraph character card with SKIN, base-image gate, shot-script gate, 1440x2560 finals, QC, de-oil, body makeup, JPEG export).",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "screenshots",
+    "screenshots.json",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "keywords": [
+    "dsh-plugin",
+    "cosplay",
+    "comfyui",
+    "z-image-turbo",
+    "text-to-image",
+    "image-generation",
+    "photo-set"
+  ],
+  "author": "Wang-Shuanglin",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wang-Shuanglin/dsh-cosplay-studio.git"
+  },
+  "homepage": "https://github.com/Wang-Shuanglin/dsh-cosplay-studio#readme",
+  "bugs": {
+    "url": "https://github.com/Wang-Shuanglin/dsh-cosplay-studio/issues"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-store",
+        "@deepseek-ai/dsh-api-remotes",
+        "@deepseek-ai/dsh-api-session-controller",
+        "@deepseek-ai/dsh-client-connection",
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-renderer",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-ui-tool"
+      ],
+      "platform": "web"
+    }
+  }
+}
