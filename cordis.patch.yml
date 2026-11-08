@@ -1,0 +1,5 @@
+# Cosplay Studio 2.0 bundle patch: host half (deployment + generation API) and
+# browser half (the workbench panel under the sidebar).
+- insert:
+    - id: cosplay-studio
+      name: 'dsh-cosplay-studio'
